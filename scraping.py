@@ -109,16 +109,14 @@ def hemisphere_image_urls(browser):
 
     # 3. Write code to retrieve the image urls and titles for each hemisphere.
 
-    # Finding the links
-    results = browser.find_by_css('a.product-item h3')
-
         # Creating a for loop
     for i in range(4):
     
             # Creating an empty dictionary
         hemispheres = {}
     
-            # Click on the link
+            # Find/Click on the link
+        results = browser.find_by_css('a.product-item h3')
         results[i].click()
     
             # Get the full-resolution image
