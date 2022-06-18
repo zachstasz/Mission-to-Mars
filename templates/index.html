@@ -14,7 +14,8 @@
     <div class="container">
         <div class="jumbotron text-center">
             <h1>Mission to Mars</h1>
-            <p><a class="btn btn-primary btn-lg" href="/scrape" role="button">Scape New Data</a></p>
+            <!-- Deliverable 3: Add Bootstrap 3 Components -->
+            <p><a class="btn btn-danger btn-lg" href="/scrape" role="button">Scape New Data</a></p>
         </div>
         <!-- Mars News -->
         <div class="row" id="mars-news">
@@ -41,8 +42,11 @@
             <!-- Mars Facts -->
             <div class="col-md-4">
                 <div class="row" id="mars-facts">
+                    <!-- Deliverable 3: Add Bootstrap 3 Components -->
+                    <table class="table table-striped">
                     <h4>Mars Facts</h4>
                     {{ mars.facts | safe }}
+                    </table>
                 </div>
             </div>
           </div>
